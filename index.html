@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>متجر الكتروني</title>
+        <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+        <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+        }
+        </style>
+    </head>
+    <body class="light bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100">
+        <!-- Header -->
+        <header class="text-white top-0 z-50">
+            <nav class="bg-[#2f44ba] p-4 flex flex-wrap items-center justify-between">
+                <div class="flex items-center justify-between w-full md:w-auto">
+                    <h4>متجر أنساب للاجهزة الالكترونية</h4>
+
+                    <button id="hamburger" class="md:hidden flex flex-col gap-1 ms-auto">
+                        <span class="w-6 h-0.5 bg-white"></span>
+                        <span class="w-6 h-0.5 bg-white"></span>
+                        <span class="w-6 h-0.5 bg-white"></span>
+                    </button>
+                </div>
+
+                <div class="menu-items hidden w-full flex-col items-center text-center space-y-2 mt-4 md:mt-0 md:flex md:flex-row md:space-y-0 md:space-x-4 md:w-auto">
+                <ul class="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-4">
+                    <li><a href="index.html" class="me-4 hover:text-gray-300">الرئيسية</a></li>
+                    <li><a href="#" class="me-4 hover:text-gray-300">المنتجات </a></li>
+                    <li><a href="#" class="me-4 hover:text-gray-300">اتصل بنا</a></li>
+                </ul>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="text-center py-10 bg-blue-100">
+            <h2 class="text-3xl font-bold text-blue-800 mb-4">اكتشف أحدث منتجاتنا التقنية</h2>
+            <p class="text-blue-700">جودة عالية - أسعار منافسة - شحن سريع</p>
+        </section>
+
+        <!-- Product Slider -->
+        <main id="products" class="px-4 py-10">
+            <div class="relative">
+            <button id="prevBtn" class="absolute left-0 top-1/2 -translate-y-1/2 bg-blue-600 text-white px-3 py-2 rounded z-10">‹</button>
+            <div id="productSlider" class="flex flex-row-reverse overflow-x-auto space-x-4 scrollbar-hide">
+                <!-- Cards will be injected from JS -->
+            </div>
+            <button id="nextBtn" class="absolute right-0 top-1/2 -translate-y-1/2 bg-blue-600 text-white px-3 py-2 rounded z-10">›</button>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-[#2f44ba] text-white text-center py-4 mt-10">
+            <p>&copy; 2025 جميع الحقوق محفوظة - متجر أنساب</p>
+        </footer>
+
+        <script src="scripts/script.js"></script>
+    </body>
+</html>
